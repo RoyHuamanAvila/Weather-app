@@ -1,0 +1,100 @@
+.content-showClime{
+    height: 100vh;
+    background-color: #1e213a;
+    position: relative;
+}
+
+.button-search{
+    background-color: #6e707a;
+    border: none;
+    color: #e7e7eb;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.header-showClime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.button-location{
+    color: #e7e7eb;
+    background-color: #6e707a;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.text-temp{
+    display: flex;
+    color: #e7e7eb;
+    justify-content: center;
+    .ten-text{
+        margin: 0;
+        font-size: 100px;
+    }
+
+    .unit-text{
+        font-size: 110px;
+    }
+
+    .centigrade-text{
+        font-size: 50px;
+        color: #6e707a;
+    }
+}
+
+.clime-status{
+    font-size: 30px;
+    color: #6e707a;
+}
+
+.date {
+    color: #6e707a;
+}
+
+.location-icon{
+    color: #6e707a;
+}
+
+.cloud{
+    color: rgba(255, 255, 255, 0.049);
+}
+
+.background-clouds{
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :nth-child(n){
+        font-size: 160px;
+        position: absolute;
+    }
+    :nth-child(1){
+        left: -50px;
+        top: 0;
+    }
+    :nth-child(2){
+        font-size: 180px;
+        bottom: 0px;
+        left: -60px;
+    }
+    :nth-child(3){
+        right: -50px;
+        top: 10px;
+    }
+    :nth-child(4){
+        right: -40px;
+        bottom: -10px;
+    }
+}
+
+.icon-clime-current{
+    color: #fff;
+}
