@@ -1,0 +1,12 @@
+.forecast-container{
+    background-color: #100e1d;
+}
+
+.list-cards{
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+}
