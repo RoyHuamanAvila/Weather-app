@@ -27,8 +27,7 @@ const ShowClime = () => {
                 </span>
             </div>
             <div className='text-temp'>
-                <p className='ten-text'>1</p>
-                <span className='unit-text'>5</span>
+                <p className='unit-temp'>15</p>
                 <p className='centigrade-text'>°C</p>
             </div>
             <p className='clime-status'>Shower</p>

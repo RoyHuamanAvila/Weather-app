@@ -1,0 +1,53 @@
+.highligths-container{
+    background-color: #100e1d;
+    color: #e7e7eb;
+    padding: 20px;    
+    >p{
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+.card-hl{
+    background-color: #1e213a;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    p{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.card-important-data{
+    font-size: 50px;
+
+    span{
+        font-size: 70px;
+        font-weight: 600;
+    }
+}
+
+.bar-border{
+    background-color: #e7e7eb;
+    width: auto;
+    height: 10px;
+    margin: 0px 50px;
+    border-radius: 5px;
+}
+
+.bar-progress{
+    background-color: #ffec65;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.measurer{
+    color: #a09fb1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+    margin-bottom: 5px;
+}
