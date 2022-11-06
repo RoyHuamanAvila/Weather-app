@@ -5,8 +5,18 @@
 .list-cards{
     row-gap: 30px;
     column-gap: 30px;
-    padding: 50px 30px;
     flex-wrap: wrap;
-    display: grid;
+    display: flex;
+    justify-content: center;
     grid-template-columns: auto auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .list-cards{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: unset;
+    }
 }

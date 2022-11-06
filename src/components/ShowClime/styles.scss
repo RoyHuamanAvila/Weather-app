@@ -1,5 +1,6 @@
 .content-showClime{
     height: 100vh;
+    min-height: 800px;
     background-color: #1e213a;
     position: relative;
 }
@@ -63,7 +64,7 @@
 }
 
 .background-clouds{
-    height: 340px;
+    height: 45%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -95,4 +96,10 @@
 
 .icon-clime-current{
     color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-showClime{
+        height: 100%;
+    }
 }
