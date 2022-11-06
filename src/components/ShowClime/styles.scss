@@ -32,15 +32,13 @@
     display: flex;
     color: #e7e7eb;
     justify-content: center;
-    .ten-text{
+    align-items: baseline;
+    p{
         margin: 0;
+    }
+    .unit-temp{
         font-size: 100px;
     }
-
-    .unit-text{
-        font-size: 110px;
-    }
-
     .centigrade-text{
         font-size: 50px;
         color: #6e707a;
