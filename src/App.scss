@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-color: #100e1d;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;;
+}
+
+.App-2{
+  margin: 0px 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  footer{
+    color: #a09fb1;
+    justify-self: flex-end;
+    margin-top: 20px;
+  }
+
+  a{
+    color: #a09fb1;
+    :visited{
+      color: #a09fb1;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .App{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+  }
+}
