@@ -1,0 +1,77 @@
+.navSearch-container{
+    height: 100vh;
+    min-height: 800px;
+    background-color: #1e213a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    animation: SearchBarOpen forwards 0.5s linear;
+
+    >button{
+        border: none;
+        background-color: transparent;
+        font-size: large;
+        color: #e7e7eb;
+        align-self: flex-end;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.location-item{
+    color: #e7e7eb;
+    text-align: left;
+    padding: 5px 20px;
+    margin: 20px 0px;
+    border: 1px solid transparent;
+
+    &:hover{
+        border: 1px solid #e7e7eb5e;
+        ;
+    }
+}
+
+.input-search{
+    background-color: #1e213a;
+    border: 1px solid #e7e7eb;
+    padding: 5px;
+    color: #e7e7eb5e;
+    display: flex;
+    column-gap: 5px;
+
+    input{
+        background-color: transparent;
+        border: none;
+        color: #e7e7eb5e;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.search{
+    display: grid;
+    grid-template-columns: auto 80px;
+    column-gap: 10px;
+}
+
+.btn-search{
+    background-color: #3c47e9;
+    border: none;
+    color: #e7e7eb;
+}
+
+@keyframes SearchBarOpen {
+    from{
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(0);
+    }
+}

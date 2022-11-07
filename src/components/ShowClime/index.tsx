@@ -1,8 +1,10 @@
+/* import NavSearch from '../NavSearch'; */
 import './styles.scss';
 
 const ShowClime = () => {
     return(
         <div className="content-showClime">
+            {/* <NavSearch /> */}
             <header className='header-showClime'>
                 <button className='button-search'>Search for places</button>
                 <button className="button-location material-symbols-rounded">
