@@ -1,8 +1,10 @@
-export const getUserLocation = async(): Promise<[number, number]> => {
+import { Coord } from "../types";
+
+export const getUserLocation = async(): Promise<Coord> => {
     return new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(
             ({coords}) => {
-                resolve([coords.latitude, coords.longitude])
+                resolve({lat: coords.latitude, lon: coords.longitude})
             },
             (err) => {
                 alert('No se pudo obtener la geolocalización');
