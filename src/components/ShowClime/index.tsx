@@ -1,13 +1,37 @@
 /* import NavSearch from '../NavSearch'; */
+import { useEffect, useState } from 'react';
+import { getUserLocation } from '../../helpers';
 import './styles.scss';
 
+import type { wheater } from '../../types';
+
 const ShowClime = () => {
-    return(
+    const [coordinates, setCoordinates] = useState([0, 0]);
+    const [dataWheater, setdataWheater] = useState<wheater>();
+    const API_KEY = process.env.REACT_APP_API_KEY;
+
+    const handleGetGeolocation = () => {
+        getUserLocation().then(coordinates => {
+            setCoordinates(coordinates);
+        })
+
+        updateDataLocation();
+    }
+
+    const updateDataLocation = async () => {
+        await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=${API_KEY}`)
+            .then(response => response.json())
+            .then((data: wheater) => setdataWheater(data));
+    }
+
+
+    return (
         <div className="content-showClime">
             {/* <NavSearch /> */}
+            <p>{coordinates}</p>
             <header className='header-showClime'>
                 <button className='button-search'>Search for places</button>
-                <button className="button-location material-symbols-rounded">
+                <button onClick={handleGetGeolocation} className="button-location material-symbols-rounded">
                     my_location
                 </button>
             </header>
